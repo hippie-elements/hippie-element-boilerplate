@@ -6,12 +6,20 @@
 
     <style>
       :host {
-        --hippie-element-text-color-default: #f06;
+        --hippie-element-text-color-default: #fff;
+        --hippie-element-background-color-default: #f06;
       }
 
       div {
-        color: var(--hippie-element-text-color,
-               var(--hippie-element-text-color-default)
+        display: inline-block;
+        padding: 20px;
+        color: var(
+          --hippie-element-text-color,
+          var(--hippie-element-text-color-default)
+        );
+        background-color: var(
+          --hippie-element-background-color,
+          var(--hippie-element-background-color-default)
         );
       }
     </style>

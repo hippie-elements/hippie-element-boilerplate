@@ -2,11 +2,9 @@
 
 > <:fallen_leaf:></:fallen_leaf:> Boilerplate for create hippie elements using Polymer 1x.
 
-[![Travis CI Status](https://travis-ci.org/hippie-elements/hippie-boilerplate.svg?branch=master)](https://travis-ci.org/hippie-elements/hippie-boilerplate)
-
-## Live Demo
-
-[Check it live!](http://hippie-elements.github.io/hippie-element-boilerplate/)
+[![Travis CI Status](https://travis-ci.org/hippie-elements/hippie-element-boilerplate.svg?branch=master)](https://travis-ci.org/hippie-elements/hippie-element-boilerplate)
+[![bower](https://img.shields.io/bower/v/hippie-element-boilerplate.svg)](https://www.npmjs.com/package/bananacss)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/hippie-elements/hippie-element-boilerplate)
 
 ## How to install and use:
 
@@ -24,11 +22,20 @@ $ bower install hippie-element-boilerplate --save
 
 3. Start using it!
 
-```html
-<hippie-element-boilerplate prop="foo">
-  bar
-</hippie-element-boilerplate>
+<!--
 ```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="hippie-element-boilerplate.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<hippie-element-boilerplate prop="foo">bar</hippie-element-boilerplate>
+```
+
 
 ## Properties
 
@@ -66,11 +73,13 @@ $ [sudo] npm install -g bower polymer-cli
 $ bower install
 ```
 
-3. Start the development server on [http://localhost:8080/components/hippie-element-boilerplate/](http://localhost:8080/components/hippie-element-boilerplate/):
+3. Start the development server:
 
 ```sh
 $ polyserve
 ```
+
+Go to [localhost:8080/components/hippie-element-boilerplate/](http://localhost:8080/components/hippie-element-boilerplate/)
 
 ## Tests
 
