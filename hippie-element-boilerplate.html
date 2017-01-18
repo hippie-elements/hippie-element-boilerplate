@@ -1,0 +1,36 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="hippie-element-boilerplate">
+
+  <template>
+
+    <style>
+      :host {
+        --hippie-element-text-color-default: #f06;
+      }
+
+      div {
+        color: var(--hippie-element-text-color,
+               var(--hippie-element-text-color-default)
+        );
+      }
+    </style>
+
+    <div>
+      {{prop}}
+      <content></content>
+      boilerplate
+    </div>
+
+  </template>
+
+  <script>
+    Polymer({
+      is: "hippie-element-boilerplate",
+      properties: {
+        prop: String
+      }
+    })
+  </script>
+
+</dom-module>

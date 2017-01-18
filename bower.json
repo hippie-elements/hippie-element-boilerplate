@@ -1,0 +1,26 @@
+{
+  "name": "hippie-element-boilerplate",
+  "description": "Boilerplate for create hippie elements using Polymer 1x",
+  "version": "0.1.0",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "authors": [
+    "Afonso Pacifer <afonsopacifer@live.com>"
+  ],
+  "main": "hippie-element-boilerplate.html",
+  "homepage": "https://github.com/hippie-elements/hippie-element-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hippie-elements/hippie-element-boilerplate"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.5.0"
+  }
+}
