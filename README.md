@@ -2,6 +2,8 @@
 
 > <:fallen_leaf:></:fallen_leaf:> Boilerplate for create hippie elements using Polymer 1x.
 
+[![Travis CI Status](https://travis-ci.org/hippie-elements/hippie-boilerplate.svg?branch=master)](https://travis-ci.org/hippie-elements/hippie-boilerplate)
+
 ## Live Demo
 
 [Check it live!](http://hippie-elements.github.io/hippie-element-boilerplate/)
@@ -64,10 +66,29 @@ $ [sudo] npm install -g bower polymer-cli
 $ bower install
 ```
 
-3. Start the development server on http://localhost:8080/:
+3. Start the development server on [http://localhost:8080/components/hippie-element-boilerplate/](http://localhost:8080/components/hippie-element-boilerplate/):
 
 ```sh
 $ polyserve
+```
+
+## Tests
+
+Linting with eslint:
+
+```sh
+$ [sudo] npm install -g eslint
+$ [sudo] npm install -g eslint-plugin-html
+
+$ eslint *.html
+```
+
+Linting with polylint:
+
+```sh
+$ [sudo] npm install -g polylint
+
+$ polylint
 ```
 
 ## Versioning
@@ -86,4 +107,4 @@ See [Releases](https://github.com/hippie-elements/hippie-element-boilerplate/rel
 
 ## License
 
-[MIT License](https://github.com/hippie-elements/hippie-license/README.md) © [Afonso Pacifer](http://afonsopacifer.github.io/)
+[MIT License](https://github.com/hippie-elements/hippie-license/LICENSE.md) © [Afonso Pacifer](http://afonsopacifer.github.io/)

@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "keywords": [
     "polymer",
-    "web-components"
+    "web-components",
+    "hippie"
   ],
   "authors": [
     "Afonso Pacifer <afonsopacifer@live.com>"
@@ -15,7 +16,7 @@
     "type": "git",
     "url": "git://github.com/hippie-elements/hippie-element-boilerplate"
   },
-  "license": "MIT",
+  "license": "https://github.com/hippie-elements/hippie-license/LICENSE.md",
   "ignore": [
     "**/.*",
     "bower_components"
