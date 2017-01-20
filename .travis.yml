@@ -16,8 +16,8 @@ before_script:
 - polylint
 - eslint *.html
 script:
-- xvfb-run wct --skip-plugins sauce
-- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct --skip-plugins local; fi
+- xvfb-run wct --skip-plugin sauce
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct --skip-plugin local; fi
 env:
   global:
   - secure: CKbDjOKsc6GdXQvaZwIJoiK0L6cSv3i2vYA8E/L8VqsGKOrlPZcganBmgDDbXX+8WGcP2ZNkA5EUaJk+uDKzOUNQcd20TGP7gUrzFDfnINA/sX4PtTfFHwL2Kzb7cUMrQZTOWmET+HyX+zK/AH56i7DpY9DhEWZQDllDhrZtLuOKmWPMq75K3/alcPsAZ5Bbnq1qbsVBr8x3fSdXclojzhov9/Iu5tVHhnZWA/gxJBhWwwQuLEVsMfWfpNI6tqDhGdjQ+n+Wy8RUgYGpqUfuCzNyA0ZEr1EgJCUxf41UUp4fa9hSdXXCP1Cw3RObHCxTxtXg+9ODRTH0ONJzH71dhkz74r7P17A6fm6BroIawUxDcqJoAUDfw4dHsrt8vPKLUfx4xjR5QqFDxGvlhMAsc/B1bn5vRjHetNdzqjyO0LT/9NENYRv5Dk9TSgVqj1n2L4uNofzeU85iXrns/5JbGN9T8HZ8/fFkoHBNqQj0iKEUe4zMGRERRZNktA3k4C3rua+9nB5Dxs0vIYxmL0vD/hsulO9PsTP4Ck8V9I7cRrTN13YVCNFb1XyIRc8mlZxuYBgB1vVT4be0tpgxBOi60AWNN7+r1JKT5vNJOT48XG7XhAanjqsqxPeooQGpdV3UY5PI6skKT8wJDrKH4jt4JHMYz8kGmtdtjeMhYU/CnKg=
