@@ -1,18 +1,24 @@
 language: node_js
-sudo: required
-dist: trusty
 node_js: stable
-before_script:
-  - npm install -g bower polylint eslint eslint-plugin-html web-component-tester
-  - bower install
-  - polylint
-  - eslint *.html
+dist: trusty
+sudo: required
 addons:
   firefox: latest
+  sauce_connect: true
   apt:
     sources:
-      - google-chrome
+    - google-chrome
     packages:
-      - google-chrome-stable
+    - google-chrome-stable
+before_script:
+- npm install -g bower polylint eslint eslint-plugin-html web-component-tester
+- bower install
+- polylint
+- eslint *.html
 script:
-  - xvfb-run wct
+- xvfb-run wct
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi
+env:
+  global:
+  - secure: CKbDjOKsc6GdXQvaZwIJoiK0L6cSv3i2vYA8E/L8VqsGKOrlPZcganBmgDDbXX+8WGcP2ZNkA5EUaJk+uDKzOUNQcd20TGP7gUrzFDfnINA/sX4PtTfFHwL2Kzb7cUMrQZTOWmET+HyX+zK/AH56i7DpY9DhEWZQDllDhrZtLuOKmWPMq75K3/alcPsAZ5Bbnq1qbsVBr8x3fSdXclojzhov9/Iu5tVHhnZWA/gxJBhWwwQuLEVsMfWfpNI6tqDhGdjQ+n+Wy8RUgYGpqUfuCzNyA0ZEr1EgJCUxf41UUp4fa9hSdXXCP1Cw3RObHCxTxtXg+9ODRTH0ONJzH71dhkz74r7P17A6fm6BroIawUxDcqJoAUDfw4dHsrt8vPKLUfx4xjR5QqFDxGvlhMAsc/B1bn5vRjHetNdzqjyO0LT/9NENYRv5Dk9TSgVqj1n2L4uNofzeU85iXrns/5JbGN9T8HZ8/fFkoHBNqQj0iKEUe4zMGRERRZNktA3k4C3rua+9nB5Dxs0vIYxmL0vD/hsulO9PsTP4Ck8V9I7cRrTN13YVCNFb1XyIRc8mlZxuYBgB1vVT4be0tpgxBOi60AWNN7+r1JKT5vNJOT48XG7XhAanjqsqxPeooQGpdV3UY5PI6skKT8wJDrKH4jt4JHMYz8kGmtdtjeMhYU/CnKg=
+  - secure: cvFoJuVJ6UWA8KyCC+PR+LcXIfqKd3FhD66fJOaZblhGpG5+LupVfZTm/6uk03F5YpPljyBmQrlUOX06ugNUGv6pSUNJTcgvk6eytpRiLVSYV11F7vYaU7myeOmo2Iw4ivCkqTho03/IZUei4S/uhZ722aZr3OHIrZUEiQBXU1w6zz3KWPNCT4zCcNUVtYy4MUsfmU/es9hsljtai/Vd6HNukwDN/EIweTUmCiIAjBsfNY/t7Um3/hHONeIzXtnlw/JWQ3xCR+A//2xxZ3qHJ0Kp3IPiW8YEG9j1JMI8trfGGV4trj2WY+dL7iJcJZH7MdReTDF5KOcR8544gdOhmPxZcJnBhC7Ka/5Ziz7t9Lyyd3C9yFMO6eUuznlgYgILKehjwMkIlxTeNwe6aURRyat+1q71Fqe8nNinVi3iBPa9wVtJ20qW5lTm3nS1qMlWfG/kd8croy3VnRVMcu9N9Yr1GZv5Yet2WkruJCXpYnfgA1XXTJ+U1HdJkmsYjmsqgtNJR7pxnStJpUk8bGo3S75p0Ftr3gE7b3h91XLevyesA+c2mIVHQ4gm5OYbMxzHJFHtgBWxksqEd7fPp/dHnR8fsBZeTiTCZ7rAtkPU4NmafLIioBGWPUP2Wu3G7fAHZ5Vyphc0MfDLPwb4PsnKlGSMeA4oGJFldzykxapNpS0=
