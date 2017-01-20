@@ -8,19 +8,19 @@
 
 ## How to install and use:
 
-1. Install the element using [Bower](http://bower.io/):
+1 - Install the element using [Bower](http://bower.io/):
 
 ```sh
 $ bower install hippie-element-boilerplate --save
 ```
 
-2. Import the element:
+2 -  Import the element:
 
 ```html
 <link rel="import" href="bower_components/hippie-element-boilerplate/hippie-element-boilerplate.html">
 ```
 
-3. Start using it!
+3 - Start using it!
 
 <!--
 ```
@@ -40,16 +40,17 @@ $ bower install hippie-element-boilerplate --save
 ## Properties
 
 Property  | Type        | Default   | Description
----       | ---         | ---       | ---
+:---      |:---        |:---        |:---
 `prop`    | *String*    | `foo`     | Prop description
 
 ## Styling
 
 The following custom properties and mixins are available for styling:
 
-Custom property             | Default  | Description
----                         | ---      | ---
---hippie-element-text-color | #f06     | Text color
+Custom property                   | Default  | Description
+:---                              |:---      |:---
+--hippie-element-text-color       | #f06     | Text color
+--hippie-element-background-color | #fff     | Background color
 
 ## Browser Support
 
@@ -61,19 +62,19 @@ Using the [webcomponents.js](https://github.com/WebComponents/webcomponentsjs):
 
 ## Development
 
-1. Install [Bower](http://bower.io/) & [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
+1 - Install [Bower](http://bower.io/) & [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
 
 ```sh
 $ [sudo] npm install -g bower polymer-cli
 ```
 
-2. Install local dependencies:
+2 - Install local dependencies:
 
 ```sh
 $ bower install
 ```
 
-3. Start the development server:
+3 - Start the development server:
 
 ```sh
 $ polyserve
@@ -82,6 +83,8 @@ $ polyserve
 Go to [localhost:8080/components/hippie-element-boilerplate/](http://localhost:8080/components/hippie-element-boilerplate/)
 
 ## Tests
+
+#### Linting
 
 Linting with eslint:
 
@@ -100,6 +103,22 @@ $ [sudo] npm install -g polylint
 $ polylint
 ```
 
+#### Unit tests
+
+Install the Web Component Tester (WCT) test runner:
+
+```sh
+$ [sudo] npm install -g web-component-tester
+```
+
+Run tests:
+
+```sh
+$ wct
+```
+
+**Quick tip**: For run the [selenium driver for safari](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-safari-driver), you need follow [some instructions](https://webkit.org/blog/6900/webdriver-support-in-safari-10/).
+
 ## Versioning
 
 To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
@@ -116,4 +135,4 @@ See [Releases](https://github.com/hippie-elements/hippie-element-boilerplate/rel
 
 ## License
 
-[MIT License](https://github.com/hippie-elements/hippie-license/LICENSE.md) © [Afonso Pacifer](http://afonsopacifer.github.io/)
+[MIT License](https://hippie-elements.github.io/LICENSE.txt) © [hippie team](https://github.com/orgs/hippie-elements/people)
