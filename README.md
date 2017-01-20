@@ -49,8 +49,10 @@ The following custom properties and mixins are available for styling:
 
 Custom property                   | Default  | Description
 :---                              |:---      |:---
---hippie-element-text-color       | #f06     | Text color
---hippie-element-background-color | #fff     | Background color
+--hippie-element-background-color | ##f06    | Background color
+--hippie-element-text-color       | fff      | Text color
+--hippie-element-text             | {}       | Text styles
+
 
 ## Browser Support
 
