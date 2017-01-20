@@ -12,18 +12,26 @@
     <link rel="import" href="../hippie-element-boilerplate.html">
   </head>
   <body>
-    <test-fixture id="basic">
+
+    <test-fixture id="hippie-element-boilerplate">
       <template>
         <hippie-element-boilerplate></hippie-element-boilerplate>
       </template>
     </test-fixture>
 
     <script>
-      suite('hippie-element-boilerplate', function() {
+      suite('<hippie-element-boilerplate>', function() {
+
+        var element;
+
+        setup(function() {
+          element = fixture('hippie-element-boilerplate');
+        });
+
         test('instantiating the element works', function() {
-          var element = fixture('basic');
           assert.equal(element.is, 'hippie-element-boilerplate');
         });
+
       });
     </script>
   </body>
