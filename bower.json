@@ -22,6 +22,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.5.0"
+    "polymer": "Polymer/polymer#^1.5.0",
+    "web-component-tester": "^5.0.0"
   }
 }

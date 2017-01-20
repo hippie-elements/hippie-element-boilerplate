@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>hippie-element-boilerplate tests</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../hippie-element-boilerplate.html">
+  </head>
+  <body>
+    <test-fixture id="basic">
+      <template>
+        <hippie-element-boilerplate></hippie-element-boilerplate>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('hippie-element-boilerplate', function() {
+        test('instantiating the element works', function() {
+          var element = fixture('basic');
+          assert.equal(element.is, 'hippie-element-boilerplate');
+        });
+      });
+    </script>
+  </body>
+</html>

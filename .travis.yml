@@ -3,8 +3,16 @@ sudo: required
 dist: trusty
 node_js: stable
 before_script:
-  - npm install -g bower polylint eslint eslint-plugin-html
+  - npm install -g bower polylint eslint eslint-plugin-html web-component-tester
   - bower install
-script:
   - polylint
   - eslint *.html
+addons:
+  firefox: latest
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+script:
+  - xvfb-run wct
