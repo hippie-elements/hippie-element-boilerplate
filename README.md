@@ -36,7 +36,6 @@ $ bower install hippie-element-boilerplate --save
 <hippie-element-boilerplate prop="foo">bar</hippie-element-boilerplate>
 ```
 
-
 ## Properties
 
 Property  | Type        | Default   | Description
@@ -83,6 +82,7 @@ $ polyserve
 ```
 
 Go to [localhost:8080/components/hippie-element-boilerplate/](http://localhost:8080/components/hippie-element-boilerplate/)
+
 
 ## Tests
 

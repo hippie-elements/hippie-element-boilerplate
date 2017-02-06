@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git://github.com/hippie-elements/hippie-element-boilerplate"
   },
-  "license": "https://github.com/hippie-elements/hippie-license/LICENSE.md",
+  "license": "https://hippie-elements.github.io/LICENSE.txt",
   "ignore": [
     "**/.*",
     "bower_components"
@@ -25,6 +25,8 @@
     "polymer": "Polymer/polymer#^1.5.0"
   },
   "devDependencies": {
-    "web-component-tester": "^5.0.0"
+    "iron-component-page": "^1.1.8",
+    "web-component-tester": "^5.0.0",
+    "iron-demo-helpers": "^1.2.5"
   }
 }

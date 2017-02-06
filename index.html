@@ -1,23 +1,24 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 
   <head>
 
-    <title>hippie-element-boilerplate</title>
+    <title>hippie-element-boilerplate demo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="../webcomponentsjs/webcomponents.js"></script>
+ 
+    <link rel="import" href="../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../iron-demo-helpers/demo-pages-shared-styles.html">
+
     <link rel="import" href="hippie-element-boilerplate.html">
 
-    <style is="custom-style">
-      hippie-element-boilerplate {
-        --hippie-element-text-color: #000;
-        --hippie-element-background-color: #ffc208;
-        --hippie-element-text: {
-          font-size: 18px;
-        };
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .vertical-section-container {
+        max-width: 500px;
       }
     </style>
 
@@ -25,9 +26,44 @@
 
   <body>
 
-    <hippie-element-boilerplate prop="hippie">
-      element
-    </hippie-element-boilerplate>
+    <main class="vertical-section-container centered">
+      <h1>hippie-element-boilerplate demo</h1>
+
+      <h2>Default style</h2>
+
+      <demo-snippet class="centered-demo">
+        <template>
+          
+          <hippie-element-boilerplate prop="hippie">
+            element
+          </hippie-element-boilerplate>
+
+        </template>
+      </demo-snippet>
+
+      <h2>Custom style</h2>
+
+      <demo-snippet class="centered-demo">
+        <template>
+
+          <style is="custom-style">
+            .custom {
+              --hippie-element-text-color: #000;
+              --hippie-element-background-color: #b4ff00;
+              --hippie-element-text: {
+                font-size: 18px;
+              };
+            }
+          </style>
+
+          <hippie-element-boilerplate prop="Hello" class="custom">
+            World
+          </hippie-element-boilerplate>
+
+        </template>
+      </demo-snippet>
+
+    </main>
 
   </body>
 </html>
